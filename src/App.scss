@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: HelveticaNeue;
+  src: url(https://res.cloudinary.com/seijihg/raw/upload/v1567937360/lady_bug_air/fonts/helveticaneue/HelveticaNeueMed_grmzjq.ttf);
+}
+
+$color_bg: #d2e1ff;
+$color_yellow: linear-gradient(#ffc500, #f7b507);
+$color_gray: #dedede;
+$color_blue: #4c50b2;
+$shadow: rgba(0, 0, 0, 0.225);
+$font_stack1: Arial, Helvetica, sans-serif;
+
+
+body {
+  background: $color_bg;
+  font-family: $font_stack1;
+  font-size: 10.5pt;
+  line-height: 1.5;
+}
+
+.form_container {
+  margin: auto;
+  margin-top: 30%;
+  width: 695px;
+  height: 386px;
+  background: white;
+  border-radius: 10px;
+}
+
+.form_container .form_co_internal {
+  padding: .3rem;
+}
+
+.form_container .yourdetails {
+  width: 100%;
+  height: 57px;
+  line-height: 57px;
+  background: $color_yellow;
+  border-radius: 10px;
+  color: white;
+  padding-left: .75rem;
+  text-shadow: 1px 1px black;
+}
+
+.step {
+  border-radius: 10px;
+  background: $color_gray;
+}
+.step:nth-child(2) {
+  margin: 5px 0px;
+}
+.name_and_surname {
+  display: flex;
+}
+label {
+  font-family: HelveticaNeue;
+}
+.item:nth-child(2) {
+padding-left: .75rem;
+}
+input {
+  width: 200px;
+  height: 35px;
+  border-radius: 10px;
+  -webkit-box-shadow:inset 0 0 5px $shadow;
+       -moz-box-shadow:inset 0 0 5px $shadow;
+            box-shadow:inset 0 0 5px $shadow;
+}
