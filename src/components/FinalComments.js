@@ -1,22 +1,13 @@
 import React from 'react'
+import Step3Details from './Step3Details'
 
-const FinalComments = (props) => {
+const FinalComments = ({step3_unveal}) => {
   return (
     <div className="step">
       <div className="yourdetails">
         Step 3: Final comments
       </div>
-      <div className="gray_area">
-        <div className="comment_section">
-          <div>
-            <label for="comments">Comments</label>
-            <br></br>
-            <textarea id="comments">
-            </textarea>
-          </div>
-          <div className="btn_next">Next ></div>
-        </div>
-      </div>
+      {step3_unveal ? <Step3Details /> : null}
     </div>
   )
 }
