@@ -6,12 +6,17 @@ const FinalComments = (props) => {
       <div className="yourdetails">
         Step 3: Final comments
       </div>
-      <div>
-        <label for="comments">Comments</label>
-        <textarea id="comments"rows="10">
-        </textarea>
+      <div className="gray_area">
+        <div className="comment_section">
+          <div>
+            <label for="comments">Comments</label>
+            <br></br>
+            <textarea id="comments">
+            </textarea>
+          </div>
+          <div className="btn_next">Next ></div>
+        </div>
       </div>
-      <div>Next ></div>
     </div>
   )
 }
