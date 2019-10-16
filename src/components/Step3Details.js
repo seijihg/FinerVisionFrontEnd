@@ -10,7 +10,7 @@ const Step3Details = (props) => {
           <textarea id="comments">
           </textarea>
         </div>
-        <div className="btn_next">Next ></div>
+        <button className="btn_next" type="submit">Next ></button>
       </div>
     </div>
   )

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Step2Details = (props) => {
+const Step2Details = ({step2UnvealHandler}) => {
   return (
     <div className="gray_area">
         <div className="align">
@@ -27,7 +27,7 @@ const Step2Details = (props) => {
           <input type="text" id="dob"  required ></input>
         </div>
         <div className="btn">
-          <div className="btn_next">Next ></div>
+          <div className="btn_next" onClick={step2UnvealHandler}>Next ></div>
         </div>
       </div>
   )
