@@ -60,7 +60,7 @@ const UserFormContainer = props => {
       email: email,
       phone: phone,
       gender: gender,
-      date: `${day}/${month}/${year}`,
+      dob: `${day}/${month}/${year}`,
       comments: comments
     }
     setStep1(false);
@@ -68,8 +68,11 @@ const UserFormContainer = props => {
     setStep3(false);
 
     Helpers.submitForm(data)
+    .then(res => {
+      window.alert("Successfully Added User. Check console.log")
+    })
+    .catch(err => console.log(err))
     console.log("Fill in API in helpers.js for backend to POST form to save data.")
-    window.alert("Fill in API in helpers.js for backend to POST form to save data.")
   };
 
   const setNameHandler = event => {

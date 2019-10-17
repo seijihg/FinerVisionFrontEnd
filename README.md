@@ -13,3 +13,5 @@ You will also see any lint errors in the console.
 ### Finer Vision Front End form.
 
 Matching closely the design to provided PSD file. Quick validations with JS due to time constraint.
+
+Demo: https://youtu.be/bmP9jOPStcI
