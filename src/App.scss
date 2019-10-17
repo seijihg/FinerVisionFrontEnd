@@ -31,7 +31,6 @@ body {
   margin: auto;
   margin-top: 30%;
   width: 695px;
-  height: 386px;
   background: white;
   border-radius: 10px;
 }
@@ -79,7 +78,13 @@ input {
   width: 200px;
   height: 35px;
   border-radius: 10px;
-  @extend %shadow_shared
+  @extend %shadow_shared;
+  text-indent: .75rem;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
 .gray_area {
   padding: 0 .75rem;
@@ -103,6 +108,7 @@ input {
   font-family: MyriadPro Regular;
   border-radius: 10px;
   margin-bottom: .5rem;
+  cursor: pointer;
 }
 #gender {
   border: none;
@@ -140,4 +146,7 @@ select {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+}
+textarea {
+  padding: .75rem;
 }
